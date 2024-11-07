@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/**
+    Author: Rifat Bhuiya
+    Author email: hello.rifatbhuiya@gmail.com
+    Version: 0.0.0.1
+**/
+
+/**
+----------------
+Table Of Content
+----------------
+0. Common CSS Start
+1. Navbar CSS start
+2. Main Wrapper CSS start
+**/
+
+/* Common CSS Start */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+span,
+address,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #dddddd;
+}
+
+/* Navbar CSS start */
+.main_nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1500;
+}
+
+.main_nav_bg {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #efefef;
+  padding: 5px 30px;
+}
+
+.main_nav .logo img {
+  width: 25%;
+}
+
+.main_nav ul li a {
+  color: black !important;
+  text-transform: capitalize;
+}
+
+.main_nav ul li a {
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: "Poppins", serif;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.main_nav ul li a:hover {
+  color: #0E44CF !important;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.main_nav ul .navbar_social a i {
+  margin-left: 5px;
+}
+
+/* Main Wrapper CSS start */
+ .main_wrapper {
+  transform: translateY(80px);
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  -ms-transform: translateY(80px);
+  position: relative;
+}
+.main_wrapper_menu{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  background-color: #efefef;
+  padding: 40px 0 0 40px;
+  position: sticky;
+  top: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+.main_wrapper_menu ul{
+  position: sticky;
+  top: 40px;
+}
+.main_wrapper_menu ul li {
+  margin-bottom: 18px;
+}
+
+.main_wrapper_menu ul li a {
+  color: black;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.main_wrapper_menu ul li a.active {
+  color: #0E44CF;
+   font-weight: 600;
+}
+
+.main_wrapper_menu ul li a:hover {
+  color: #0E44CF;
+   font-weight: 600;
+}
+
+.main_wrapper_content{
+  text-align: justify;
+  background-color: white;
+  padding: 40px 65px 0 65px;
+}
