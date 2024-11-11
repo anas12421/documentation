@@ -11,7 +11,8 @@ Table Of Content
 ----------------
 0. Common CSS Start
 1. Navbar CSS start
-2. Main Wrapper CSS start
+2. Main Wrapper Menu CSS start
+2. Main Wrapper Content CSS start
 **/
 
 /* Common CSS Start */
@@ -58,6 +59,30 @@ svg {
 body {
   overflow-x: hidden;
   background-color: #dddddd;
+}
+
+.title {
+  color: #252b33;
+  line-height: 1.5;
+  font-size: 35px;
+  font-weight: 400;
+  padding-top: 75px;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.paragraph {
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
 }
 
 /* Navbar CSS start */
@@ -108,15 +133,16 @@ body {
   margin-left: 5px;
 }
 
-/* Main Wrapper CSS start */
- .main_wrapper {
+/* Main Wrapper Menu CSS start */
+.main_wrapper {
   transform: translateY(80px);
   -webkit-transform: translateY(80px);
   -moz-transform: translateY(80px);
   -ms-transform: translateY(80px);
   position: relative;
 }
-.main_wrapper_menu{
+
+.main_wrapper_menu {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   height: 100vh;
   background-color: #efefef;
@@ -125,10 +151,12 @@ body {
   top: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
-.main_wrapper_menu ul{
+
+.main_wrapper_menu ul {
   position: sticky;
   top: 40px;
 }
+
 .main_wrapper_menu ul li {
   margin-bottom: 18px;
 }
@@ -148,16 +176,31 @@ body {
 
 .main_wrapper_menu ul li a.active {
   color: #0E44CF;
-   font-weight: 600;
+  font-weight: 600;
 }
 
 .main_wrapper_menu ul li a:hover {
   color: #0E44CF;
-   font-weight: 600;
+  font-weight: 600;
 }
 
-.main_wrapper_content{
-  text-align: justify;
+/* Main Wrapper Menu CSS start */
+.main_wrapper_content {
   background-color: white;
-  padding: 40px 65px 0 65px;
+  padding: 65px 65px 0 65px;
+}
+
+.main_wrapper_content_heading h1 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 35px;
+}
+
+.main_wrapper_content_author_name a b {
+  color: black;
+}
+.main_wrapper_content_description{
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
 }
