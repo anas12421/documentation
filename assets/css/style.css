@@ -11,8 +11,7 @@ Table Of Content
 ----------------
 0. Common CSS Start
 1. Navbar CSS start
-2. Main Wrapper Menu CSS start
-2. Main Wrapper Content CSS start
+2. Main Wrapper CSS start
 **/
 
 /* Common CSS Start */
@@ -51,6 +50,10 @@ a {
   text-decoration: none;
 }
 
+b {
+  font-weight: 700;
+}
+
 img,
 svg {
   vertical-align: middle;
@@ -61,12 +64,22 @@ body {
   background-color: #dddddd;
 }
 
+.main_wrapper_content_description,
+.main_wrapper_content_layout,
+.main_wrapper_content_faq,
+.main_wrapper_content_source, 
+.main_wrapper_content_support,
+.main_wrapper_content_template{
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
 .title {
   color: #252b33;
   line-height: 1.5;
   font-size: 35px;
   font-weight: 400;
-  padding-top: 75px;
+  padding-top: 85px;
   margin-bottom: 25px;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
@@ -79,7 +92,7 @@ body {
 }
 
 .paragraph {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.8;
   font-weight: 300;
   font-family: "Inter", sans-serif;
@@ -158,7 +171,7 @@ body {
 }
 
 .main_wrapper_menu ul li {
-  margin-bottom: 18px;
+  margin-bottom: 5px;
 }
 
 .main_wrapper_menu ul li a {
@@ -194,13 +207,49 @@ body {
   font-size: 48px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 35px;
 }
 
 .main_wrapper_content_author_name a b {
   color: black;
 }
-.main_wrapper_content_description{
-  padding-bottom: 25px;
-  border-bottom: 1px solid black;
+.main_wrapper_content_faq .accordion {
+  margin-top: 35px;
+}
+.main_wrapper_content_faq .accordion .accordion-item{
+  margin: 20px 0 20px 0;
+}
+.main_wrapper_content_faq .accordion h6 button{
+  background-color: #f1f2f4;
+  color: #4c4d4d;
+  padding: 25px 18px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+.main_wrapper_content_faq .accordion h6 button:hover {
+  background-color: #0E44CF !important;
+  color: white !important;
+}
+.main_wrapper_content_faq .accordion h6 button:focus {
+  box-shadow: none;
+  background-color: #0E44CF !important;
+  color: white !important;
+}
+.main_wrapper_content_source_item{
+  padding-top: 35px;
+}
+.main_wrapper_content_source_item h6{
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.main_wrapper_content_source_item ul li{
+  list-style-type: square;
+  margin-top: 5px;
+}
+.main_wrapper_content_source_item ul li p{
+  font-size: 18px;
 }

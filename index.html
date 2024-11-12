@@ -29,7 +29,7 @@
   <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".main_wrapper_content">
+<body data-bs-spy="scroll" data-bs-target=".main_wrapper">
 
   <!-- Navbar Part Start -->
   <nav class="navbar navbar-expand-lg main_nav py-0">
@@ -65,19 +65,19 @@
         <div class="col-lg-3 px-0">
           <div class="main_wrapper_menu">
             <ul>
-              <li><a href="#" class="active">getting started</a></li>
-              <li><a href="#description">description</a></li>
-              <li><a href="#layout">layout</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">source and credits</a></li>
-              <li><a href="#">support</a></li>
-              <li><a href="#">more templates</a></li>
+              <li><a href="#home" class="nav-link active">getting started</a></li>
+              <li><a href="#description" class="nav-link">description</a></li>
+              <li><a href="#layout" class="nav-link">layout</a></li>
+              <li><a href="#faq" class="nav-link">FAQ</a></li>
+              <li><a href="#source" class="nav-link">source and credits</a></li>
+              <li><a href="#support" class="nav-link">support</a></li>
+              <li><a href="#template" class="nav-link">more templates</a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-9 px-0">
           <div class="main_wrapper_content">
-            <div class="main_wrapper_content_heading">
+            <div class="main_wrapper_content_heading" id="home">
               <h1 class="text-capitalize">documentation</h1>
               <h3 class="title">Soonly - Bootstrap 5 Template</h3>
               <h4 class="subtitle">Thank you so much for purchasing our
@@ -101,7 +101,8 @@
             </div>
             <div class="main_wrapper_content_alert pt-5">
               <div class="alert alert-info">If you have any questions that are beyond the scope of this help file,
-                Please feel free to email via <a href="https://themeforest.net/user/themesies">My Profile Page</a>.
+                Please feel free to email via <a href="https://themeforest.net/user/themesies" target="_blank">My
+                  Profile Page</a>.
               </div>
               <hr>
             </div>
@@ -115,22 +116,180 @@
             </div>
             <div class="main_wrapper_content_layout" id="layout">
               <h2 class="title">layout</h2>
-              <p class="paragraph">
-                The **Soonly Bootstrap Template** layout is structured to offer a sleek and focused "coming soon" page,
+              <p class="subtitle">
+                The **Soonly Bootstrap Template** layout is structured to offer a sleek and focused "coming soon"
+                page,
                 organized for clarity and user engagement:
               </p>
-              <p class="paragraph py-2">1. **<b>Hero Section</b>**: The main, full-screen hero section prominently displays a background image
-                or
-                video, with an overlay that maintains readability. Here, the site's title or logo is centered, paired
-                with a concise tagline or launch message.</p>
-              <p class="paragraph py-2">2. **<b>Countdown Timer</b>**: Below the hero, a countdown timer dynamically displays the days, hours,
-                minutes,
-                and seconds until launch. This is often styled with large, clear typography to draw attention.</p>
-              <p class="paragraph py-2">3. **<b>Subscription Form</b>**: Positioned either directly beneath the timer or alongside it, the email subscription form invites visitors to sign up for updates. This form is simple, with fields for emailand a submit button, ensuring easy access.</p>
-              <p class="paragraph py-2"> 5. **<b>Social Media Links</b>**: Social icons are usually placed in a row near the bottom of the page
-                or as a fixed sidebar. This enables visitors to follow social profiles and stay updated</p>
-              <p class="paragraph py-2">6. **<b>Footer</b>**: The footer contains essential links like privacy policy or contact information, styled minimally to keep the focus on the launch message</p>
-              <p class="paragraph py-2">The layout is fully responsive, ensuring that each element adapts well on both desktop and mobile views. The minimalistic style and structured sections maintain a professional, engaging feel throughout.</p>
+              <ul class="ps-3">
+                <li>
+                <li>
+                  <p class="paragraph py-2">1. **<b>Hero Section</b>**: The main, full-screen hero section prominently
+                    displays a background image
+                    or
+                    video, with an overlay that maintains readability. Here, the site's title or logo is centered,
+                    paired
+                    with a concise tagline or launch message.</p>
+                </li>
+                <li>
+                  <p class="paragraph py-2">2. **<b>Countdown Timer</b>**: Below the hero, a countdown timer dynamically
+                    displays the days, hours,
+                    minutes,
+                    and seconds until launch. This is often styled with large, clear typography to draw attention.</p>
+                </li>
+                <li>
+                  <p class="paragraph py-2">3. **<b>Subscription Form</b>**: Positioned either directly beneath the
+                    timer or alongside it, the email subscription form invites visitors to sign up for updates. This
+                    form is simple, with fields for emailand a submit button, ensuring easy access.</p>
+                </li>
+                <li>
+                  <p class="paragraph py-2">4. **<b>Social Media Links</b>**: Social icons are usually placed in a row
+                    near the bottom of the page
+                    or as a fixed sidebar. This enables visitors to follow social profiles and stay updated</p>
+                </li>
+                <li>
+                  <p class="paragraph py-2">5. **<b>Footer</b>**: The footer contains essential links like privacy
+                    policy or contact information, styled minimally to keep the focus on the launch message</p>
+                </li>
+              </ul>
+              <p class="paragraph py-2">The layout is fully responsive, ensuring that each element adapts well on
+                both desktop and mobile views. The minimalistic style and structured sections maintain a
+                professional, engaging feel throughout.</p>
+            </div>
+            <div class="main_wrapper_content_faq" id="faq">
+              <h2 class="title">FAQ</h2>
+              <h3 class="subtitle">We provided answers for a few frequently asked questions here in order to help you
+                understand better our template.</h3>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h6 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Can I customize the countdown timer?
+                    </button>
+                  </h6>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p class="paragraph">Yes, the countdown timer can be customized to match your launch date. You can
+                        modify the date and time easily in the template's code, and adjust its style using CSS to fit
+                        your branding.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h6 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Is Soonly compatible with all browsers?
+                    </button>
+                  </h6>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p class="paragraph">Soonly is built using Bootstrap, making it compatible with all modern
+                        browsers, including Chrome, Firefox, Safari, Edge, and Opera.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h6 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Does the template work on mobile devices?
+                    </button>
+                  </h6>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p class="paragraph">Absolutely! Soonly is fully responsive and optimized for all screen sizes,
+                        providing an excellent user experience on mobile, tablet, and desktop devices.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h6 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Is it possible to add more sections to the template?
+                    </button>
+                  </h6>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p class="paragraph">Yes, Soonly’s flexible codebase allows you to add extra sections or features
+                        as needed. You can insert additional Bootstrap components to expand the template’s
+                        functionality.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h6 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      How do I change the colors and fonts?
+                    </button>
+                  </h6>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p class="paragraph">You can customize colors and fonts in the CSS file. Simply modify the
+                        variables in Bootstrap’s custom CSS to reflect your brand's style or replace with custom fonts
+                        via Google Fonts or a similar service.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main_wrapper_content_source" id="source">
+              <h2 class="title">Source & credits</h2>
+              <div class="main_wrapper_content_source_item pt-0">
+                <h6>images :</h6>
+                <ul class="ps-5">
+                  <li>
+                    <p>Unsplash - <a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a></p>
+                  </li>
+                  <li>
+                    <p>Freepik - <a href="https://freepik.com/" target="_blank">https://freepik.com/</a></p>
+                  </li>
+                  <li>
+                    <p>Pexels - <a href="https://www.pexels.com/" target="_blank">https://www.pexels.com/</a></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="main_wrapper_content_source_item">
+                <h6>Fonts :</h6>
+                <ul class="ps-5">
+                  <li>
+                    <p>Google Fonts - <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="main_wrapper_content_source_item">
+                <h6>Components & Framework :</h6>
+                <ul class="ps-5">
+                  <li>
+                    <p>Bootstrap - <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="main_wrapper_content_support" id="support">
+              <h2 class="title">Support</h2>
+              <h3 class="subtitle">If this documentation doesn't answer your questions, please send us Email via <a
+                  href="mailto:authorthemesies@gmail.com" class="btn btn-primary">Our Mail</a></h3>
+              <p class="paragraph pt-4">We may be located in different time zones, but be sure we answer all questions
+                as soon as possible no matter if it's weekend or weekdays. There are however some rare cases when we do
+                not receive your emails so if you do not get a reply from us withing 24 hours, please write to us again
+                or comment in the purchased item section of themeforest. Some delay in replying may occur on holiday
+                seasons.</p>
+                <div class="alert alert-warning mt-3">
+                  <p><span class="badge bg-danger">Note:</span> While we aim to provide the best support possible, please keep in mind that it only extends to verified buyers and only to issues related to our template like bugs and errors. Custom modifications or third party module implementations are not included and may cost extra.</p>
+                </div>
+            </div>
+            <div class="main_wrapper_content_template" id="template">
+              <h2 class="title">More template</h2>
             </div>
           </div>
         </div>
