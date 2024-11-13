@@ -12,6 +12,7 @@ Table Of Content
 0. Common CSS Start
 1. Navbar CSS start
 2. Main Wrapper CSS start
+3. Footer CSS Start
 **/
 
 /* Common CSS Start */
@@ -67,9 +68,8 @@ body {
 .main_wrapper_content_description,
 .main_wrapper_content_layout,
 .main_wrapper_content_faq,
-.main_wrapper_content_source, 
-.main_wrapper_content_support,
-.main_wrapper_content_template{
+.main_wrapper_content_source,
+.main_wrapper_content_support {
   padding-bottom: 25px;
   border-bottom: 1px solid black;
 }
@@ -212,13 +212,16 @@ body {
 .main_wrapper_content_author_name a b {
   color: black;
 }
+
 .main_wrapper_content_faq .accordion {
   margin-top: 35px;
 }
-.main_wrapper_content_faq .accordion .accordion-item{
+
+.main_wrapper_content_faq .accordion .accordion-item {
   margin: 20px 0 20px 0;
 }
-.main_wrapper_content_faq .accordion h6 button{
+
+.main_wrapper_content_faq .accordion h6 button {
   background-color: #f1f2f4;
   color: #4c4d4d;
   padding: 25px 18px;
@@ -227,29 +230,87 @@ body {
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
+
 .main_wrapper_content_faq .accordion h6 button:hover {
   background-color: #0E44CF !important;
   color: white !important;
 }
+
 .main_wrapper_content_faq .accordion h6 button:focus {
   box-shadow: none;
   background-color: #0E44CF !important;
   color: white !important;
 }
-.main_wrapper_content_source_item{
+
+.main_wrapper_content_source_item {
   padding-top: 35px;
 }
-.main_wrapper_content_source_item h6{
+
+.main_wrapper_content_source_item h6 {
   font-size: 24px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
-.main_wrapper_content_source_item ul li{
+
+.main_wrapper_content_source_item ul li {
   list-style-type: square;
   margin-top: 5px;
 }
-.main_wrapper_content_source_item ul li p{
+
+.main_wrapper_content_source_item ul li p {
   font-size: 18px;
+}
+
+.main_wrapper_content_item a {
+  color: #252b33;
+  line-height: 24px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.main_wrapper_content_item a:hover {
+  text-decoration: underline;
+}
+
+/* Footer CSS Start */
+footer {
+  padding: 66px 0;
+  text-align: center;
+}
+
+.footer_social ul li a {
+  color: #aab1b8;
+  font-size: 25px;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footer_social ul li a:hover {
+  color: #0E44CF;
+  transform: scale(1.2) translateY(-5px);
+  -webkit-transform: scale(1.2) translateY(-5px);
+  -moz-transform: scale(1.2) translateY(-5px);
+  -ms-transform: scale(1.2) translateY(-5px);
+  -o-transform: scale(1.2) translateY(-5px);
+}
+
+.footer_copyright p {
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  padding-top: 15px;
+}
+
+.footer_copyright p a:hover {
+  text-decoration: underline;
+  color: #0E44CF;
 }
