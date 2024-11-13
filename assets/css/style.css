@@ -10,9 +10,10 @@
 Table Of Content
 ----------------
 0. Common CSS Start
-1. Navbar CSS start
-2. Main Wrapper CSS start
-3. Footer CSS Start
+1. Backtotop CSS start
+2. Navbar CSS start
+3. Main Wrapper CSS start
+4. Footer CSS Start
 **/
 
 /* Common CSS Start */
@@ -96,6 +97,92 @@ body {
   line-height: 1.8;
   font-weight: 300;
   font-family: "Inter", sans-serif;
+}
+/* Preloader CSS Start */
+#loader {
+  /* Uncomment this to make it run! */
+  /*
+     animation: loader 5s linear infinite; 
+  */
+  
+  position: fixed;
+  background-color: #252b33;
+  z-index: 99998;
+  height: 100%;
+  width: 100%;
+}
+@keyframes loader {
+  0% { left: -100px }
+  100% { left: 110%; }
+}
+#box {
+  width: 50px;
+  height: 50px;
+  background: #0E44CF;
+  animation: animate .5s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 3px;
+  z-index: 99999;
+
+}
+@keyframes animate {
+  17% { border-bottom-right-radius: 3px; }
+  25% { transform: translateY(9px) rotate(22.5deg); }
+  50% {
+    transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+    border-bottom-right-radius: 40px;
+  }
+  75% { transform: translateY(9px) rotate(67.5deg); }
+  100% { transform: translateY(0) rotate(90deg); }
+} 
+#shadow {
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  opacity: 0.1;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  border-radius: 50%;
+  animation: shadow .5s linear infinite;
+  -webkit-animation: shadow .5s linear infinite;
+}
+@keyframes shadow {
+  50% {
+    transform: scale(1.2,1);
+  }
+}
+/* Backtotop CSS Start */
+
+.backtotop i {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #0E44CF;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.backtotop i:hover {
+  background-color: white;
+  color: #0E44CF;
 }
 
 /* Navbar CSS start */
