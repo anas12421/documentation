@@ -10,10 +10,11 @@
 Table Of Content
 ----------------
 0. Common CSS Start
-1. Backtotop CSS start
-2. Navbar CSS start
-3. Main Wrapper CSS start
-4. Footer CSS Start
+1. Preloader CSS start
+2. Backtotop CSS start
+3. Navbar CSS start
+4. Main Wrapper CSS start
+5. Footer CSS Start
 **/
 
 /* Common CSS Start */
@@ -98,23 +99,26 @@ body {
   font-weight: 300;
   font-family: "Inter", sans-serif;
 }
+
 /* Preloader CSS Start */
 #loader {
-  /* Uncomment this to make it run! */
-  /*
-     animation: loader 5s linear infinite; 
-  */
-  
   position: fixed;
   background-color: #252b33;
   z-index: 99998;
   height: 100%;
   width: 100%;
 }
+
 @keyframes loader {
-  0% { left: -100px }
-  100% { left: 110%; }
+  0% {
+    left: -100px
+  }
+
+  100% {
+    left: 110%;
+  }
 }
+
 #box {
   width: 50px;
   height: 50px;
@@ -127,16 +131,30 @@ body {
   z-index: 99999;
 
 }
+
 @keyframes animate {
-  17% { border-bottom-right-radius: 3px; }
-  25% { transform: translateY(9px) rotate(22.5deg); }
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+
   50% {
-    transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+    transform: translateY(18px) scale(1, .9) rotate(45deg);
     border-bottom-right-radius: 40px;
   }
-  75% { transform: translateY(9px) rotate(67.5deg); }
-  100% { transform: translateY(0) rotate(90deg); }
-} 
+
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
 #shadow {
   width: 50px;
   height: 5px;
@@ -149,11 +167,13 @@ body {
   animation: shadow .5s linear infinite;
   -webkit-animation: shadow .5s linear infinite;
 }
+
 @keyframes shadow {
   50% {
-    transform: scale(1.2,1);
+    transform: scale(1.2, 1);
   }
 }
+
 /* Backtotop CSS Start */
 
 .backtotop i {
