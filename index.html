@@ -29,23 +29,66 @@
   <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".main_wrapper">
+<body data-bs-spy="scroll" data-bs-target=".main_wrapper" data-bs-target=".responsive_navbar">
 
   <!-- Preloader Part Start -->
-  <div id="loader">
+  <div id="loader" class="d-none">
     <div id="shadow"></div>
     <div id="box"></div>
   </div>
   <!-- Preloader Part End -->
 
-  <!-- backtotop start -->
+  <!-- Backtotop Start -->
   <div class="backtotop">
     <i class="fa-solid fa-arrow-up"></i>
   </div>
-  <!-- backtotop end -->
+  <!-- Backtotop End -->
+
+  <!-- Responsive Navbar Start -->
+  <div class="responsive_navbar d-lg-none">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-6 col-sm-6 col-md-6">
+          <div class="responsive_navbar_logo">
+            <a href=""><img src="assets/images/Logo.png" class="img-fluid" alt="logo"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-6 col-sm-6 col-md-6">
+          <div class="responsive_navbar_btn d-flex justify-content-end">
+            <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas Start -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+      <button title="Close" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="responsive_navbar_item">
+        <ul>
+          <li><a href="#home" class="nav-link active">getting started</a></li>
+          <li><a href="#description" class="nav-link">description</a></li>
+          <li><a href="#layout" class="nav-link">layout</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#source" class="nav-link">source and credits</a></li>
+          <li><a href="#support" class="nav-link">support</a></li>
+          <li><a href="#template" class="nav-link">more templates</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Responsive Navbar End -->
 
   <!-- Navbar Part Start -->
-  <nav class="navbar navbar-expand-lg main_nav py-0">
+  <nav class="navbar navbar-expand-lg main_nav py-0 d-none d-lg-block">
     <div class="container main_nav_bg">
       <a class="navbar-brand logo" href="#"><img src="./assets/images/Logo.png" class="w-25 img-fluid" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -76,7 +119,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 px-0">
-          <div class="main_wrapper_menu">
+          <div class="main_wrapper_menu d-none d-lg-block">
             <ul>
               <li><a href="#home" class="nav-link active">getting started</a></li>
               <li><a href="#description" class="nav-link">description</a></li>

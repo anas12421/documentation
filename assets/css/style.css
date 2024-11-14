@@ -12,9 +12,10 @@ Table Of Content
 0. Common CSS Start
 1. Preloader CSS start
 2. Backtotop CSS start
-3. Navbar CSS start
-4. Main Wrapper CSS start
-5. Footer CSS Start
+3. Responsive Navbar CSS start
+4. Navbar CSS start
+5. Main Wrapper CSS start
+6. Footer CSS Start
 **/
 
 /* Common CSS Start */
@@ -202,6 +203,44 @@ body {
 
 .backtotop i:hover {
   background-color: white;
+  color: #0E44CF;
+}
+
+/* Responsive Navbar CSS start */
+.responsive_navbar {
+  background-color: white;
+  border-bottom: 1px solid #efefef;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 99985;
+}
+
+.responsive_navbar_logo a img {
+  width: 100%;
+}
+
+.responsive_navbar_btn a i {
+  font-size: 25px;
+  color: #0E44CF;
+}
+
+.offcanvas-start {
+  width: 55%;
+}
+
+.offcanvas-body {
+  padding: 30px 0 0 0;
+}
+
+.responsive_navbar_item ul li a {
+  color: #4c4d4d;
+  text-transform: capitalize;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+
+.responsive_navbar_item ul li a.active {
   color: #0E44CF;
 }
 
