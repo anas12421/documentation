@@ -1,14 +1,4 @@
-@media (min-width: 768px) and (max-width: 990.98px) {
-  #loader {
-    opacity: 0;
-  }
-}
-
 @media (min-width: 450px) and (max-width: 767.98px) {
-  #loader {
-    opacity: 0;
-  }
-
   .main_wrapper {
     transform: translateY(60px);
     -webkit-transform: translateY(60px);
@@ -29,10 +19,6 @@
 }
 
 @media (max-width: 449.98px) {
-  #loader {
-    display: none;
-  }
-
   .main_wrapper {
     transform: translateY(40px);
     -webkit-transform: translateY(40px);

@@ -20,7 +20,7 @@ $(function () {
   })
 
   // preloader js
-  setTimeout(function () {
-    $("#loader").fadeToggle()
-  }, 1000)
+  // setTimeout(function () {
+  //   $("#loader").fadeToggle()
+  // }, 1000)
 })
