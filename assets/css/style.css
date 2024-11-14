@@ -224,6 +224,9 @@ body {
   font-size: 25px;
   color: #0E44CF;
 }
+.offcanvas{
+  padding-top: 60px;
+}
 
 .offcanvas-start {
   width: 55%;
